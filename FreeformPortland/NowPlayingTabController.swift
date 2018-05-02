@@ -29,7 +29,8 @@ class NowPlayingTabBarController: UITabBarController {
         // anchor your view right above the tabBar
         containerView.bottomAnchor.constraint(equalTo: tabBarTopAnchor).isActive = true
 
-        containerView.heightAnchor.constraint(equalToConstant: heightAnchor).isActive = true
+//        containerView.heightAnchor.constraint(equalToConstant: heightAnchor).isActive = true
+        containerView.heightConstraint.constant = heightAnchor
     }
 
 }

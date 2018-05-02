@@ -11,19 +11,17 @@ import UIKit
 public class PlayerView: UIView {
     var label: UILabel!
     var button: UIButton!
-    var viewWidth: CGFloat!
-    var viewHeight: CGFloat!
     var isFullScreen: Bool = false
+    var heightConstraint: NSLayoutConstraint!
     
     override init (frame: CGRect) {
         super.init(frame: frame)
         
-//        print(UIScreen.main.bounds.height)
-        viewWidth = self.frame.width
-        viewHeight = self.frame.height
-        
         self.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 50/255, alpha: 1.0)
         
+        heightConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: frame.height)
+        
+        self.addConstraint(heightConstraint)
         
         label = UILabel(frame: CGRect(x: 12, y: 8, width: self.frame.size.width-90, height: 50))
         label.text = "Audio Player!"
@@ -45,8 +43,9 @@ public class PlayerView: UIView {
     
     @objc func buttonAction(sender: UIButton!) {
         self.isFullScreen = !self.isFullScreen
-        let height = self.isFullScreen ? UIScreen.main.bounds.height : 200
-        self.frame = CGRect(x: 0, y: 50, width: UIScreen.main.bounds.width, height: height);
+        let height = self.isFullScreen ? UIScreen.main.bounds.height - 50 : 200
+
+        heightConstraint.constant = height
 
     }
 }
