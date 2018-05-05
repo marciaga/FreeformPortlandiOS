@@ -13,7 +13,6 @@
 		48BF704A2094C42100E36EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48BF70492094C42100E36EC6 /* Assets.xcassets */; };
 		48BF704D2094C42100E36EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48BF704B2094C42100E36EC6 /* LaunchScreen.storyboard */; };
 		48BF705B2094E4FF00E36EC6 /* NowPlayingTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BF705A2094E4FF00E36EC6 /* NowPlayingTabController.swift */; };
-		48FD565420953A5F00515DF7 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD565320953A5F00515DF7 /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		48BF704C2094C42100E36EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48BF704E2094C42100E36EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48BF705A2094E4FF00E36EC6 /* NowPlayingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingTabController.swift; sourceTree = "<group>"; };
-		48FD565320953A5F00515DF7 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 				48BF70442094C42000E36EC6 /* ViewController.swift */,
 				48BF70462094C42000E36EC6 /* Main.storyboard */,
 				48BF705A2094E4FF00E36EC6 /* NowPlayingTabController.swift */,
-				48FD565320953A5F00515DF7 /* PlayerViewController.swift */,
 				48BF704B2094C42100E36EC6 /* LaunchScreen.storyboard */,
 				48BF70492094C42100E36EC6 /* Assets.xcassets */,
 				48BF704E2094C42100E36EC6 /* Info.plist */,
@@ -142,7 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				48BF70452094C42000E36EC6 /* ViewController.swift in Sources */,
-				48FD565420953A5F00515DF7 /* PlayerViewController.swift in Sources */,
 				48BF705B2094E4FF00E36EC6 /* NowPlayingTabController.swift in Sources */,
 				48BF70432094C42000E36EC6 /* AppDelegate.swift in Sources */,
 			);
